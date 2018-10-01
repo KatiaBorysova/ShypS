@@ -1,0 +1,21 @@
+{
+  "name": "shypshyna",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-connect": "^5.5.0",
+    "gulp-if": "^2.0.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sftp": "^0.1.5",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.5",
+    "wiredep": "^4.0.0"
+  }
+}

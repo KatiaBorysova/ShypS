@@ -1,0 +1,168 @@
+.achievements-wrapper {
+    background-color: $lightBgColor;
+    //padding: 50px 0;
+
+    .heading-wrap-achievements {
+        margin: 70px auto;
+    }
+
+    .x-slider {
+
+        .x-slider-point {
+            list-style: none outside none;
+            position: relative;
+            width: 200px;
+            display: inline-block;
+            float: left;
+            position: relative;
+            vertical-align: top;
+
+            .avatar {
+                transform: rotateY(0deg) rotateY(0deg);
+                transform-style: preserve-3d;
+                backface-visibility: hidden;
+                opacity: 1;
+                transition: all .35s ease;
+                &:hover {
+                    transform: rotateY(180deg);
+                    opacity: 0;
+                    transition: all .35s ease;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                    width: 198px;
+                    height: 120px;
+                }
+                .avatar-header{
+                    padding: 0 10px;
+                } 
+         } // .avatar
+
+         
+
+            
+        } //.x-slider-point 
+            
+        .details {
+            background-color: #e21712;
+            padding: 15px;
+            color: #fff;
+            font-size: 12px;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: all .4s ease-in-out;
+            transform: rotateY(-180deg);
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            opacity: 0;
+            transition: all .35s ease;
+            &:after {
+                background: none repeat scroll 0 0 #ffc908;
+                content: "";
+                height: 15px;
+                position: absolute;
+                right: -10px;
+                bottom: -5px;
+                transform: rotate(-45deg);
+                width: 25px;
+            }
+            .details-header {
+                font-size: 15px;
+                padding-bottom: 8px;
+            }
+            .fa-box-arrow {
+                border: 1px solid #fff;
+                color: #fff;
+                display: block;
+                height: 25px;
+                padding: 5px;
+                position: relative;
+                text-align: center;
+                width: 25px;
+                margin-top: 10px;
+                transition: all .35s ease;
+                &:hover {
+                    background: none repeat scroll 0 0 #ffc908;
+                    border-color: #ffc908;
+                }
+                i {
+                    color: #fff;
+                    left: 8px;
+                    position: absolute;
+                    top: 5px;
+                }
+            }
+        } // .details
+
+        .x-item-wrap {
+            &:hover {
+                .details {
+                    z-index: 10;
+                    position: absolute;
+                    transform: rotateY(0deg) rotateY(0deg);
+                    opacity: 1;
+                    transition: all .35s ease;
+                }
+            }   
+        } // .x-item-wrap   
+    } // .x-slider
+
+    .x-navigation {
+        margin: 20px auto 0;
+        position: relative;
+        text-align: center;
+
+        @media only screen and (max-width: 675px) {
+            text-align: left;
+        }
+
+        &:after {
+            border: 2px solid #dddddd;
+            border-left: 0;
+            border-right: 0;
+            content: "";
+            display: inline-block;
+            left: 0;
+            padding: 1px;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: 3;
+        }
+
+        .slider-direction {
+            background: #fff;
+            border: 1px solid #ddd;
+            height: 40px;
+            width: 40px;
+            padding: 8px 0;
+            text-align: center;
+            top: 0;
+            position: relative;
+            z-index: 7;
+            display: inline-block;
+            
+            &:hover {
+                background: #000;
+                border: 1px solid #000;
+                i {
+                    color: #fff;
+                }
+            }
+            &.disabled {
+                opacity: 0.5;
+            }
+            i {
+                color: #000;
+            }
+        } // .slider-direction
+
+    } // .x-navigation 
+    .x-frame {
+        width: 1170px;
+    }
+} // .acievements-wrapper

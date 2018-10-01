@@ -1,0 +1,110 @@
+
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+
+@import 'includes/settings';
+@import 'includes/global';
+@import 'includes/fonts';
+
+
+@import 'sections/bg-slideshow';
+@import 'sections/footer-triangle';
+
+@import 'sections/header-menu';
+@import 'sections/banner';
+@import 'sections/about';
+@import 'sections/services';
+@import 'sections/featured-boxes';
+@import 'sections/achievements';
+@import 'sections/offers';
+@import 'sections/contact-us';
+@import 'sections/subscribe';
+@import 'sections/footer';
+
+
+#map {
+  width: 100%;
+  height: 450px;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.carousel-wrapper {
+  .carousel-inner {
+    max-height: 800px;
+    .carousel-item{
+      position: relative;
+      .logo-slider-container{
+        position: absolute;
+        left: 10%;
+        top: 5%;
+        width: 20%;
+      }
+      .carousel-caption{
+        bottom: 45%;
+        left: 15%;
+        max-width: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+    .carousel-wrapper {
+        .carousel-inner {
+            max-height: 600px;
+        }
+    }
+}
+
+.home-section {
+	padding: 70px 0;
+	position: relative;
+}
+.text-center {
+	text-align: center
+} 
+
+
+.heading-wrap {
+  margin: 0 auto 10px auto;
+  max-width: 1000px;
+
+  .logo-container{
+    margin: 0 auto 40px auto;
+    width: 250px;	
+  }
+  .section-heading {
+    font-size: 40px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .section-subheading {
+    background: none repeat scroll 0 0 #ffc908;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin: 0 0 70px;
+    padding: 10px;
+    text-transform: uppercase;
+    //position: relative;
+    transition-property: background-color, margin-left;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    //transition: background-color .5s linear;
+    &:hover {
+      margin-left: 30px;
+      background-color: $mainColor;
+    } 	
+  } //.section-subheading
+
+} // .heading-wrap

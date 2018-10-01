@@ -1,0 +1,36 @@
+.banner-wrapper {
+    background-color: $mainColor;
+    color: $white;
+    .banner-full-width {
+      padding: 30px 20px 20px;
+      h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+      }
+      h5 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      .btn {
+        background-color: transparent;
+        color: #fff;
+        margin-top: 0;
+        padding: 12px 20px;
+        border: 1px solid #fff;
+        position: relative;
+        border-radius: 0;
+        text-transform: uppercase;
+        &:before {
+          content: '';
+          border: 4px solid transparent;
+          border-top-color: $white;
+          border-right-color: $white;
+          right: 3px;
+          position: absolute;
+          top: 3px;
+        }
+      }
+    }
+  }

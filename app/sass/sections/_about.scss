@@ -1,0 +1,145 @@
+
+.about-wrapper {
+    padding: 90px 0;
+    color: $white;
+    //background-color: #483938;
+
+    .blockquote-title {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.25;
+        text-transform: uppercase;
+        max-width: 190px;
+        border-left: 8px solid $secondColor;
+        padding: 0 15px;
+        margin-bottom: 50px;
+        position: relative;
+
+        &:after {
+            content: '';
+            border: 7px solid transparent;
+            border-top-color: $mainColor;
+            border-right-color: $mainColor;
+            top: 0;
+            right: 0;
+            position: absolute; 
+        }
+    } //.blockquote-title
+
+    .blockquote-quote {
+        border: medium none;
+        font-family: "Merriweather";
+        font-style: italic;
+        font-size: 18px;
+        padding: 0 0 40px 40px;
+        position: relative;
+        margin-bottom: 40px;
+
+        &:before {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            bottom: -3px;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 35px;
+            height: 3px;
+        }
+
+        .fa-quote-left,
+        .fa-quote-right {
+            color: #e21712;
+            font-size: 30px;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    } //.blockquote-quote
+    .avatar-about {
+            img {
+            float: left;
+            height: auto;
+            margin: 0 20px 20px 35px;
+            max-width: 60px;
+            width: 100%;
+        }
+        .avatar-name {
+           font-weight: bold;
+            font-size: 14px;
+            color: #e21712;
+            margin-bottom: 15px;
+        }
+        .avatar-role {
+            margin: 0;
+            padding: 0;
+            font-style: italic;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $white;
+        }
+        .avatar-description{
+            text-transform: capitalize;
+        }
+    } //.avatar-about
+
+    .about-tabs-wrap {
+        position: relative;
+        border: medium none;
+        padding-bottom: 180px;
+
+        .about-tabs {
+            border: none;
+            //display: inline-block;
+	        width: 100%;
+
+            .about-item {
+                margin-right: 10px;
+                width: 30%;
+                position: inherit;
+                a {
+                    border: medium none !important;
+                    margin: 0;
+                    padding: 0;
+                }
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    width: 100%;
+                    opacity: 0.7;
+                    transition: all .3s ease-out;
+                }
+                & .active {
+                    img {
+                        opacity: 1;
+                        border: none;
+                    }
+                    .tab-li-content {
+                        display: block;
+                    }
+                }
+                .tab-li-content {
+                    bottom: 0;
+                    left: 0;
+                    min-height: 190px;
+                    position: absolute;
+                    width: 100%;
+                    display: none;
+
+                    .tab-content-head {
+                        font-size: 28px;
+                        color: $white;
+                        margin: 30px 0;
+                        font-weight: lighter;
+                    }
+                    .tab-content-description {
+                        font-size: 14px;
+                        color: $white;
+                        font-weight: lighter;
+
+                    }
+                } // .tab-li-content
+            } // li
+        } // .about-tabs 
+
+    } // .about-tabs-wrap
+}

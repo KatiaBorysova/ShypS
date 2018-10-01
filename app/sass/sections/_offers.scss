@@ -1,0 +1,215 @@
+.offers-wrapper {
+    background-color:$white;
+
+    .section-heading {
+        margin: 0 0 15px;
+    }
+    .filter-wrap {
+        width: 100%;
+
+        #filter {
+            .filter-caption {
+                display: inline-block;
+                list-style: none;
+                margin-bottom: 50px;
+    
+                .filter-link {
+                    background: none repeat scroll 0 0 #fff;
+                    border: 1px solid #dddddd;
+                    color: #000;
+                    display: block;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: all 0.4s ease 0s;
+                    margin-left: -5px;
+                    overflow: hidden;
+                    position: relative;
+    
+                    &:after {
+                        background: none repeat scroll 0 0 #e21712;
+                        content: "";
+                        height: 15px;
+                        position: absolute;
+                        right: -12px;
+                        top: -5px;
+                        transform: rotate(45deg);
+                        width: 25px;
+                    }
+                    
+                    &:hover, &.current {
+                        background: #000;
+                        color: #fff;
+                        
+                        &:after {
+                            background: none repeat scroll 0 0 #ffc908;
+                        }
+                    }
+                }
+            } // .filter-caption
+        } // #filter
+    } // .filter-wrap
+
+    .isotope-item {
+        z-index: 2;
+        width: 24.98%;
+    
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            .slide-desc {
+                opacity: 1;
+            }
+        }
+        .slide-desc {
+            transition: all .3s ease-out;
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+            left: 0px;
+            position: absolute;
+            top: 0;
+            z-index: 9999;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            color: #fff;
+            opacity: 0;
+            overflow: hidden;
+
+            .isotope-head {
+                font-family: 'Oswald', sans-serif;
+                float: right;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: right;
+                text-transform: uppercase;
+                width: 66%;
+                position: relative;
+
+                @media only screen and (max-width : 1000px) {
+                    font-size: 16px;
+                }
+                @media only screen and (max-width : 750px) {
+                    font-size: 13px;
+                }
+                @media only screen and (max-width : 650px) {
+                    display: none;
+                }
+
+                  &:after {
+                    border-bottom: 1px solid #fff;
+                    border-top: 1px solid #fff;
+                    bottom: -10px;
+                    content: "";
+                    height: 4px;
+                    position: absolute;
+                    right: 0;
+                    width: 50px;
+
+                }  
+            } // .isotope-head
+
+            .isotope-desc-content {
+                display: inline-block;
+                float: right;
+                padding: 13px;
+                position: relative;
+                right: -10px;
+                text-align: right;
+                width: 85%;
+                font-size: 13px;
+
+                @media only screen and (max-width : 1150px) {
+                    display: none;
+                }
+            }
+            .isotope-explore-btn {
+                background-color: #e21712;
+                bottom: 20px;
+                color: #fff;
+                display: inline-block;
+                padding: 10px;
+                position: absolute;
+                right: 10%;
+                text-transform: uppercase;
+                text-decoration: none;
+               
+                @media only screen and (max-width : 1160px) {
+                    font-size: 13px;
+                    padding: 10px;
+                }
+                @media only screen and (max-width : 950px) {
+                    font-size: 12px;
+                    padding: 8px;
+                    bottom: 10px;   
+                }
+                @media only screen and (max-width : 750px) {
+                    font-size: 10px;
+                    padding: 8px;
+                }
+                @media only screen and (max-width : 460px) {
+                    font-size: 7px;
+                    padding: 2px;
+                }
+
+            }
+            .outline-outward {
+                display: inline-block; 
+                transform: translateZ(0); 
+                box-shadow: 0 0 1px rgba(0,0,0,0); 
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    border: #ff1c32 solid 2px;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;;
+                    transition-duration: .3s;
+                    transition-property: top,right,bottom,left;
+                }
+
+                &:hover {
+                    &:before {
+                    bottom: -4px;
+                    left: -4px;
+                    right: -4px;
+                    top: -4px;
+                    }
+                }
+            } // .outline-outward
+
+        } // .slide-desc
+    } // .isotope-item   
+
+}
+
+.isotope {
+    transition-property: height, width;
+    transition-duration: 0.8s;
+    .isotope-item {
+        transition-duration: 0.8s;
+        transition-property: transform, opacity;
+    }
+}
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+	transition-duration: 0s;
+}
+.isotope.infinite-scrolling {
+	transition: none;
+}
+
+
+
+   

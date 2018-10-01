@@ -1,0 +1,61 @@
+.boxes-section {
+    margin-top: 60px;
+
+.ft-box {
+	border: 1px solid #fff;
+	min-height: 230px;
+	padding: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	transition: all .3s ease-out;
+	color: $white;
+
+	hr {
+		border: 1px solid #fff;
+		border-left: 0;
+		border-right: 0;
+		height: 3px;
+		margin: 0 auto 20px;
+		padding: 0;
+		position: relative;
+	}
+	.ft-icon-header {
+		font-family: 'Oswald', sans-serif;
+		font-size: 23px;
+		text-align: center;
+		font-weight: normal;
+		margin-bottom: 20px;
+		
+	}
+	.ft-icon-description {
+		text-align: center;
+	}
+
+	&:after {
+		background: none repeat scroll 0 0 #fff;
+		content: "";
+		height: 15px;
+		position: absolute;
+		right: -10px;
+		top: -5px;
+		transform: rotate(45deg);
+		width: 25px;
+	}
+
+	&:hover {
+		background-color: #e21712;
+		border-color: #ffc908;
+		&:after {
+			background-color: #ffc908;
+		}
+	}
+	.ft-icon-box {
+		width: 60px;
+		height: 60px;
+		margin: 30px auto;
+	}
+}
+
+}
