@@ -802,8 +802,8 @@
             <div class="col-lg-12 text-center">
                 <div class="heading-wrap heading-wrap-contact text-center">
                         <div class="logo-container logo-container-subscribe">
-                                <img src="./images/_logo RunClub2.png" alt="">
-                            </div>
+                            <img src="./images/_logo RunClub2.png" alt="">
+                        </div>
                     <h2 class="section-heading section-heading-contact"> CONTACT US</h2>
                     <h3 class="section-subheading">WE’RE ALL ABOUT XTREME SPORTS</h3>
                     <p>Lacus sit amet aliquet cons equate metus eros volutpat leo id ms auctor elit lorem eu orci. 
@@ -834,7 +834,7 @@
                     <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
                     <div id="success"></div>
-                    <button type="submit" class="btn btn-xl">Send Message</button>
+                    <button type="submit" class="btn btn-xl btn-large">Send Message</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -886,9 +886,9 @@
                   Suspendisse ante cras pedey</p>
             </div>
             <form class="cd-form">
-              <input type="email" id="cd-email" class="cd-email" name="cd-email" placeholder="Enter your email address">
-              <input type="submit" class="cd-submit" value="Submit">
-              <div class="cd-loading"></div>
+              <input type="email" id="cd-email" class="cd-email" name="cd-email" required placeholder="Enter your email address">
+              <button type="submit" class="btn cd-submit btn-large" value="Submit">Submit</button>
+            <!--<div class="cd-loading"></div>-->
             </form>
           </div> <!-- cd-form-wrapper cd-container-->
         </div>
@@ -913,47 +913,173 @@
         <div class="container">
         <div class="row">
             <div class="col-lg-4 col-sm-4 col-xs-12">
-            <h3 class="fot-title">CLUB OPENING HOURS</h3>
-            <table>
-                <tr>
-                <th>MONDAY</th>
-                <td>09:00 AM  -  06:00 PM </td>
-                </tr>
-                <tr>
-                <th>TUESDAY</th>
-                <td>09:00 AM  -  06:00 PM </td>
-                </tr>
-                <tr>
-                <th>WEDNESDAY</th>
-                <td>09:00 AM  -  06:00 PM </td>
-                </tr>
-                <tr>
-                <th>THURSDAY</th>
-                <td>09:00 AM  -  06:00 PM </td>
-                </tr>
-                <tr>
-                <th>FRIDAY</th>
-                <td>09:00 AM  -  06:00 PM </td>
-                </tr>
-                <tr>
-                <th> SATURDAY</th>
-                <td>09:00 AM  -  06:00 PM </td>
-                </tr>
-            </table>
+                <h3 class="fot-title">CLUB OPENING HOURS</h3> 
+                <table>
+                    <tr>
+                        <th class="footer-item-head">MONDAY</th>
+                        <td class="footer-item-inner">09:00 AM  -  06:00 PM </td>
+                    </tr>
+                    <tr>
+                        <th class="footer-item-head">TUESDAY</th>
+                        <td class="footer-item-inner">09:00 AM  -  06:00 PM </td>
+                    </tr>
+                    <tr>
+                        <th class="footer-item-head">WEDNESDAY</th>
+                        <td class="footer-item-inner">09:00 AM  -  06:00 PM </td>
+                    </tr>
+                    <tr>
+                        <th class="footer-item-head">THURSDAY</th>
+                        <td class="footer-item-inner">09:00 AM  -  06:00 PM </td>
+                    </tr>
+                    <tr>
+                        <th class="footer-item-head">FRIDAY</th>
+                        <td class="footer-item-inner">09:00 AM  -  06:00 PM </td>
+                    </tr>
+                    <tr>
+                        <th class="footer-item-head"> SATURDAY</th>
+                        <td class="footer-item-inner">09:00 AM  -  06:00 PM </td>
+                    </tr>
+                </table>
             </div>
             <div class="col-lg-4 col-sm-4 col-xs-12">
-            <div class="big-logo"> <img src="img/big-logo.png" width="225" height="178" alt="img"/> </div>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="icomoon-facebook"></i></a></li>
-                <li class=""><a href="https://twitter.com/" target="_blank"><i class="icomoon-twitter"></i></a></li>
-                <li><a href="https://www.google.com/" target="_blank"><i class="icomoon-googleplus"></i></a></li>
-                <li><a href="https://www.pinterest.com/" target="_blank"><i class="icomoon-pinterest"></i></a></li>
-            </ul>
+                <div class="logo-container-footer">
+                    <img src="./images/_logo RunClub.png" alt="">
+                </div>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.pinterest.com/" target="_blank">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="col-lg-4 col-sm-4 col-xs-12">
-            <h3 class="fot-title"> PHOTOS FROM FLICKR</h3>
-            <ul id="flickr-feed" class="flickr-feed">
-            </ul>
+                <h3 class="fot-title"> PHOTOS FROM FLICKR</h3>
+    <!--            <ul class="footer-images">
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope1.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope1.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope2.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope2.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope3.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope3.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope4.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope4.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope5.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope5.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope1.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope1.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope1.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope1.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item">
+                        <img  width="75" height="75" src="images/isotope1.jpg" alt="img"/>
+                        <a class="image-popup-no-margins footer-search outline-outward" href="images/isotope1.jpg">
+                            <i class="fas fa-search"></i> 
+                        </a>
+                    <li>
+                    <li class="footer-images-item"> -->
+                    <!--    <img  width="75" height="75" src="images/isotope1.jpg" alt="img"/> 
+                    
+                    </li>
+                </ul>-->
+                <div class="popup-gallery footer-images">
+                    <a href="images/isotope1.jpg" class="footer-images-item">
+                        <img src="images/isotope1.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope2.jpg" class="footer-images-item">
+                        <img src="images/isotope2.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope3.jpg" class="footer-images-item">
+                        <img src="images/isotope3.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope4.jpg" class="footer-images-item">
+                        <img src="images/isotope4.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope5.jpg" class="footer-images-item">
+                        <img src="images/isotope5.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope1.jpg" class="footer-images-item">
+                        <img src="images/isotope1.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope2.jpg" class="footer-images-item">
+                        <img src="images/isotope2.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope3.jpg" class="footer-images-item">
+                        <img src="images/isotope3.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                    <a href="images/isotope4.jpg" class="footer-images-item">
+                        <img src="images/isotope4.jpg">
+                        <span class="footer-search">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </a>
+                </div> <!-- popup-gallery footer-images -->
+                    
             </div>
         </div>
         </div>
