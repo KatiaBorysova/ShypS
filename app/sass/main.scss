@@ -25,19 +25,35 @@
 @import 'sections/subscribe';
 @import 'sections/footer';
 
+@import 'sections/page-header';
 
+
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.home-section {
+	padding: 70px 0;
+  position: relative;
+
+  @media only screen and (max-width: 660px) {
+    padding: 40px 0;
+  }
+}
+.page-main {
+  background-color: white;
+}
+.text-center {
+	text-align: center
+} 
 #map {
   width: 100%;
   height: 450px;
 }
 
-
-body {
-    font-family: 'Lato', sans-serif;
-    position: relative;
-    overflow-x: hidden;
-    background-color: white;
-}
 
 .carousel-wrapper {
   .carousel-inner {
@@ -58,7 +74,6 @@ body {
     }
   }
 }
-
 @media only screen and (max-width: 1366px) {
     .carousel-wrapper {
         .carousel-inner {
@@ -67,17 +82,6 @@ body {
     }
 }
 
-.home-section {
-	padding: 70px 0;
-  position: relative;
-
-  @media only screen and (max-width: 660px) {
-    padding: 40px 0;
-  }
-}
-.text-center {
-	text-align: center
-} 
 
 .btn-large {
   background: none repeat scroll 0 0 #e21712;
@@ -104,3 +108,4 @@ body {
         box-shadow: none;
     }
 }
+

@@ -1,8 +1,13 @@
 .main-header {
+    
     .main-menu {
         background-color: $mainColor;
         .navbar {
             padding: 0;
+
+            @media only screen and (max-width: 991px){
+                width: 100%;
+            }
             .nav-item {
                 position: relative;
                 .nav-link {
@@ -11,6 +16,11 @@
                     font-weight: bold;
                     padding: 15px 16px;
                     text-transform: uppercase;
+
+                    @media only screen and (max-width: 991px){
+                        width: 100%;
+                        padding: 9px 16px;
+                    }
                 }
                 &:hover {
                     .nav-link {
@@ -69,3 +79,67 @@
         }
     }
 }
+/* for hamburger menu */
+.navbar-row {
+    width: 100%;
+}
+.navbar-toggler {
+    &:focus {
+        outline: none;
+    }   
+}
+.hamburger {
+    cursor: pointer;
+    margin: 5px auto 10px auto;
+    padding-left: 1.25em;
+    position: relative;
+    width: 40px;
+    height: 30px;
+ 
+    .hamburger-global {
+        backface-visibility: hidden;
+        position: absolute;
+        left: 0;
+        border-top: 4px solid white;
+        width: 100%;
+        transition: 0.55s;
+    }
+    .hamburger-top {
+        top: 0;
+    }
+    .hamburger-middle {
+        top: 15px;
+    }
+    .hamburger-bottom {
+        top: 30px;
+    }
+    .hamburger-top-click {
+        backface-visibility: hidden;
+        top: 15px;
+        transform: rotate(50deg);
+        transition: 0.55s 0.5s;
+    }
+    .hamburger-middle-click {
+        opacity: 0;
+    }
+    .hamburger-bottom-click {
+        backface-visibility: hidden;
+        top: 15px;
+        transform: rotate(-410deg);
+        transition: 0.55s 0.5s;
+    }
+}
+
+/* fixed to top menu */
+/*
+.navbar-default {
+    border-color: transparent;
+    //background-color: #222;
+}
+.navbar-fixed-top {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 10;
+} */

@@ -1,3 +1,6 @@
+
+
+
 $(function() {
     console.log('is main.js');
 });
@@ -38,12 +41,11 @@ $(function() {
 
 	        }, 90);
 			
-*/			
-
-    ////////////////////////////////////////////  
+*/		
+////////////////////////////////////////////  
     // SCROLL TOP
     ///////////////////////////////////////////
-
+/*
     $('.scroll-top').click(function(event) {
         event.preventDefault();
 
@@ -51,7 +53,19 @@ $(function() {
             scrollTop: 0
         }, 300);
     });
+*/
+    ///////
+/*
+$(document).ready(function() {
+  $("html,body").animate({scrollTop: 0}, 100); //100ms for example
+});
+*/
 
+window.onload = function() {
+    setTimeout (function () {
+     scrollTo(0,0);
+    }, 100); 
+};
 
     ////////////////////////////////////////////  
     // HOVER TABS
@@ -125,7 +139,6 @@ $(function() {
 
 
 
-
     var options = {
         horizontal: 1,
         itemNav: 'basic',
@@ -190,7 +203,69 @@ $(function() {
 
     new WOW().init();
 
+
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////// MENU HEADER /////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+/*
+$(document).ready(function(){
+
+    var $menu = $("#menu");
+
+        $(window).scroll(function(){
+   
+         if ( $(this).scrollTop() > 70 && $menu.hasClass("navbar-default") ){
+                $menu.removeClass("navbar-default").addClass("navbar-fixed-top");
+            } 
+        else if($(this).scrollTop() <= 70 && $menu.hasClass("navbar-fixed-top")) {
+                $menu.removeClass("navbar-fixed-top").addClass("navbar-default");
+            }    
+
+        });//scroll 
+    });
+
+*/
+
+/////////////////////////////////////////////////////////////
+///////////////// HAMBURGER /////////////////////////////////
+//////////////////////////////////////////////////////////////
+var Hamburger = {
+  
+    el: {
+      ham: $('.hamburger'),
+      hamTop: $('.hamburger-top'),
+      hamMiddle: $('.hamburger-middle'),
+      hamBottom: $('.hamburger-bottom')
+    },
     
+    init: function() {
+        Hamburger.bindUIactions();
+    },
+    
+    bindUIactions: function() {
+        Hamburger.el.ham
+          .on(
+            'click',
+          function(event) {
+            Hamburger.activateMenu(event);
+          event.preventDefault();
+        }
+      );
+    },
+    
+    activateMenu: function() {
+        Hamburger.el.hamTop.toggleClass('hamburger-top-click');
+        Hamburger.el.hamMiddle.toggleClass('hamburger-middle-click');
+        Hamburger.el.hamBottom.toggleClass('hamburger-bottom-click'); 
+    }
+  };
+  
+  Hamburger.init();
 
 
 
+//////////////////////////////////////////////////////////
+
+    

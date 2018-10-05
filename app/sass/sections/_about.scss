@@ -2,7 +2,10 @@
 .about-wrapper {
     padding: 90px 0;
     color: $white;
-    //background-color: #483938;
+
+    @media only screen and (max-width: 1000px) {
+        padding: 40px 0;
+      }
 
     .blockquote-title {
         font-size: 28px;
