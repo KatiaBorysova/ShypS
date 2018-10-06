@@ -1,42 +1,45 @@
 
 .page-header {
-    padding-bottom: 9px;
-    //margin: 40px 0 20px;
     border-bottom: 1px solid #ddd;
 	position: relative;
-	background-color: $white;
-}
+	padding: 50px 0 40px;
+	margin-bottom: 20px;
+	
+	&:after {
+		content: ""; 
+		border-bottom: 1px solid #ddd;
+		display: inline-block;
+		width: 100%;
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+	}
 
-.page-header:after {
-    content: "";
-    border-bottom: 1px solid #ddd;
-    display: inline-block;
-    width: 100%;
-    position: absolute;
-    bottom: -5px;
-}
+	.page-title {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 22px;
+		color: #000;
+	}
+	.breadcrumb {
+		list-style: outside none none;
+		padding: 0;
+		text-transform: uppercase;
+		background-color: $white;
+	
+		li {
+			padding: 0 5px;
+	
+			&.active {
+				color: $mainColor;
+				&:before {
+					content: "/\00a0";
+				}
+			}
+			a {
+				color: #000;
+			}
 
-.page-title {
-    font-family: 'latobold';
-	text-transform: uppercase;
-	font-size: 22px;
-	color: #000;
-}
-.breadcrumb {
-	border-radius: 0;
-	list-style: outside none none;
-	margin-bottom: 0;
-	padding: 0;
-	text-transform: uppercase
-}
-.breadcrumb>li {
-	display: inline-block
-}
-.breadcrumb>li+li:before {
-	content: "/\00a0";
-	padding: 0 5px;
-	color: #ccc
-}
-.breadcrumb>.active {
-	color: #e21712
+		}
+	}
 }
