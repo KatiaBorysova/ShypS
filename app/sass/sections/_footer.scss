@@ -83,42 +83,6 @@
 			}
 		}
 	}
-
-/* third block */
-	.footer-images {
-		display: flex;
-    	flex-wrap: wrap;
-    	justify-content: space-between;
-	}
-	
-	.footer-images-item {
-		width: 30%;
-		position: relative;
-		margin-bottom: 9px;
-
-		.footer-search {
-			position: absolute;
-			bottom: 10px;
-			right: 5px;
-			transition: all 350ms ease-in 0s;
-			visibility: hidden;
-			z-index: 2;
-			color: $white;
-
-			.fa-search {
-				background-color: rgba(220, 211, 214, 0.6);
-				padding: 12px;
-				border-radius: 50%;
-			}
-		}
-
-		&:hover {
-			.footer-search {
-				opacity: 1;
-				visibility: visible;
-			}
-		}	
-	}
 } // .footer-block
 }
 

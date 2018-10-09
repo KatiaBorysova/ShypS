@@ -128,7 +128,7 @@
       <section class="main-content" role="main">
 
 <!-- first article -->               
-        <article class="post media-image format-image">
+        <article class="post media-image format-image wow bounceInUp">
           <div class="entry-media">
             <div class="box-date-post">
               <span class="date-1">16 </span>
@@ -164,7 +164,7 @@
         </article>
 <!-- second article -->
 
-        <article class="post media-image format-carousel">
+        <article class="post media-image format-carousel wow bounceInUp">
           <div class="entry-media">
             <div class="box-date-post">
               <span class="date-1">16 </span>
@@ -175,7 +175,7 @@
                 <i class="icon-camera"></i>
               </div>
               <div class="img-overlay">
-                <a class="link-view-more">+</a>
+                <a class="link-view-more"></a>
               </div>
               <ul class="carousel-post">
                 <li><a href="images/post_830x400_2.jpg"><img src="images/post_830x400_2.jpg" alt="img"/></a></li>
@@ -203,7 +203,7 @@
         </article>
 
 <!-- third article -->              
-        <article class="post media-image format-image">
+        <article class="post media-image format-image wow bounceInUp">
           <div class="entry-media">
             <div class="box-date-post">
               <span class="date-1">16 </span>
@@ -241,22 +241,21 @@
       </section> <!-- main-content -->
     </div>
 
-
-
 <!-- ASIDE --> 
-<!--
+
     <div class="col-xs-12 col-sm-12 col-md-3">
       <aside class="sidebar">
-        <div class="widget widget-search ">
+
+        <div class="widget widget-search">
           <h3 class="widget-title"><span>Search Blog</span></h3>
           <form role="search" method="get" id="searchform" class="searchform" action="/">
-            <input type="text" placeholder="Search" value="" name="s"  >
+            <input type="text" placeholder="Search" value="" name="s">
             <button> <i class="fa fa-search"></i> </button>
           </form>
         </div>
--->      
+     
         <!-- CATEGORY LIST WIDGET -->
-<!--
+
         <div class="widget widget-category">
           <h3 class="widget-title"><span>categories</span></h3>
           <ul class="category-list unstyled clearfix">
@@ -267,14 +266,14 @@
             <li><a href="#">Web Design</a></li>
           </ul>
         </div>
--->
+
         <!-- // CATEGORY LIST WIDGET --> 
         
         <!-- TABBED CONTENT WIDGET -->
-<!--
+
         <div class="widget widget-tabbed">
           <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#tab-popular">popular</a></li>
+            <li><a data-toggle="tab" href="#tab-popular" class="active">popular</a></li>
             <li><a data-toggle="tab" href="#tab-recent2">recent</a></li>
             <li><a data-toggle="tab" href="#tab-comments">comments</a></li>
           </ul>
@@ -282,37 +281,61 @@
             <div id="tab-popular" class="tab-pane active">
               <ul class="entry-list unstyled">
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/1.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#">
+                      <img src="images/post-tab1.jpg" alt="img"/>
+                    </a> 
+                  </div>
                   <div class="entry-main">
                     <div class="entry-header">
-                      <h5 class="entry-title"><a href="#">Phasellus vehicula auctor nisi.</a></h5>
+                      <h5 class="entry-title">
+                        <a href="#">Phasellus vehicula auctor nisi.</a>
+                      </h5>
                     </div>
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 27 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 27 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/2.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#" class="entry-datetime"> 
+                      <img src="images/post-tab2.jpg" alt="img"/>
+                    </a>
+                  </div>
                   <div class="entry-header">
-                    <h5 class="entry-title"><a href="#">Cras temnpus dolor Donec eget ligula</a></h5>
+                    <h5 class="entry-title">
+                      <a href="#">Cras temnpus dolor Donec eget ligula</a>
+                    </h5>
                   </div>
                   <div class="entry-main">
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 12 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 12 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/3.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#">
+                      <img src="images/post-tab2.jpg" alt="img"/>
+                    </a> 
+                  </div>
                   <div class="entry-main">
                     <div class="entry-header">
-                      <h5 class="entry-title"><a href="#"> Aliquam interdum  eget sagittis eget eros.</a></h5>
+                      <h5 class="entry-title">
+                        <a href="#"> Aliquam interdum  eget sagittis eget eros.</a>
+                      </h5>
                     </div>
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 7 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 7 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
@@ -322,37 +345,61 @@
             <div id="tab-recent2" class="tab-pane">
               <ul class="entry-list unstyled">
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/3.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#"> 
+                      <img src="images/post-tab3.jpg" alt="img"/>
+                    </a>
+                  </div>
                   <div class="entry-main">
                     <div class="entry-header">
-                      <h5 class="entry-title"><a href="#"> Aliquam interdum  eget sagittis eget eros.</a></h5>
+                      <h5 class="entry-title">
+                        <a href="#"> Aliquam interdum  eget sagittis eget eros.</a>
+                      </h5>
                     </div>
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 7 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i></span> 7 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/1.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#">
+                      <img src="images/post-tab2.jpg" width="269" height="345" alt="img"/>
+                    </a>
+                  </div>
                   <div class="entry-main">
                     <div class="entry-header">
-                      <h5 class="entry-title"><a href="#">Phasellus vehicula auctor nisi.</a></h5>
+                      <h5 class="entry-title">
+                        <a href="#">Phasellus vehicula auctor nisi.</a>
+                      </h5>
                     </div>
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 27 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 27 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/2.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#"> 
+                      <img src="images/post-tab3.jpg" width="269" height="345" alt="img"/>
+                    </a>
+                  </div>
                   <div class="entry-header">
-                    <h5 class="entry-title"><a href="#">Cras temnpus dolor Donec eget ligula</a></h5>
+                    <h5 class="entry-title">
+                      <a href="#">Cras temnpus dolor Donec eget ligula</a>
+                    </h5>
                   </div>
                   <div class="entry-main">
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 12 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 12 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
@@ -363,37 +410,61 @@
             <div id="tab-comments" class="tab-pane">
               <ul class="entry-list unstyled">
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/1.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#"> 
+                      <img src="images/post-tab1.jpg" width="269" height="345" alt="img"/>
+                    </a>
+                  </div>
                   <div class="entry-main">
                     <div class="entry-header">
-                      <h5 class="entry-title"><a href="#">Phasellus vehicula auctor nisi.</a></h5>
+                      <h5 class="entry-title">
+                        <a href="#">Phasellus vehicula auctor nisi.</a>
+                      </h5>
                     </div>
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 27 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 27 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                 </li>
             
                 <li>
-                  <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/3.jpg" width="269" height="345" alt="img"/></a> </div>
+                  <div class="entry-thumbnail">
+                    <a class="img" href="#">
+                      <img src="images/post-tab2.jpg" width="269" height="345" alt="img"/>
+                    </a>
+                  </div>
                   <div class="entry-main">
                     <div class="entry-header">
-                      <h5 class="entry-title"><a href="#"> Aliquam interdum  eget sagittis eget eros.</a></h5>
+                      <h5 class="entry-title">
+                        <a href="#"> Aliquam interdum  eget sagittis eget eros.</a>
+                      </h5>
                     </div>
                     <div class="entry-meta">
-                      <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 7 March , 2020</a> </time>
+                      <time datetime="2020-10-27" class="entry-datetime">
+                        <a href="#"><i class="far fa-clock"></i> 7 March , 2020</a>
+                      </time>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                 </li>   <li>
-                <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/2.jpg" width="269" height="345" alt="img"/></a> </div>
+                <div class="entry-thumbnail">
+                  <a class="img" href="#">
+                    <img src="images/post-tab3.jpg" width="269" height="345" alt="img"/>
+                  </a>
+                </div>
                 <div class="entry-header">
-                  <h5 class="entry-title"><a href="#">Cras temnpus dolor Donec eget ligula</a></h5>
+                  <h5 class="entry-title">
+                    <a href="#">Cras temnpus dolor Donec eget ligula</a>
+                  </h5>
                 </div>
                 <div class="entry-main">
                   <div class="entry-meta">
-                    <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 12 March , 2020</a> </time>
+                    <time datetime="2020-10-27" class="entry-datetime">
+                      <a href="#"><i class="far fa-clock"></i> 12 March , 2020</a>
+                    </time>
                   </div>
                 </div>
                 <div class="clearfix"></div>
@@ -403,21 +474,75 @@
             
           </div>
         </div>
--->
+
         <!-- // TABBED CONTENT WIDGET --> 
         
-        <!-- FLICKR STREAM -->
-<!--
-        <div class="widget widget-flickr">
+        <!-- MAGNIFIC STREAM -->
+
+        <div class="widget widget-magnific">
           <h3 class="widget-title"><span>FLICKR photos</span></h3>
-          <ul id="flickr-feed2" class="flickr-feed">
-          </ul>
+          <div class="popup-gallery magnific-images">
+              <a href="images/isotope1.jpg" class="magnific-images-item">
+                  <img src="images/isotope1.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope2.jpg" class="magnific-images-item">
+                  <img src="images/isotope2.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope3.jpg" class="magnific-images-item">
+                  <img src="images/isotope3.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope4.jpg" class="magnific-images-item">
+                  <img src="images/isotope4.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope5.jpg" class="magnific-images-item">
+                  <img src="images/isotope5.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope1.jpg" class="magnific-images-item">
+                  <img src="images/isotope1.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope2.jpg" class="magnific-images-item">
+                  <img src="images/isotope2.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope3.jpg" class="magnific-images-item">
+                  <img src="images/isotope3.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+              <a href="images/isotope4.jpg" class="magnific-images-item">
+                  <img src="images/isotope4.jpg">
+                  <span class="magnific-search">
+                      <i class="fas fa-search"></i>
+                  </span>
+              </a>
+          </div> <!-- popup-gallery magnific-images -->
         </div>
--->
-        <!-- // FLICKR STREAM --> 
+
+        <!-- // MAGNIFIC STREAM --> 
         
         <!-- TAGS WIDGET -->
-<!--
+
         <div class="widget widget-tags">
           <h3 class="widget-title"><span>Tags cloud</span></h3>
           <ul class="tag-cloud unstyled clearfix">
@@ -430,9 +555,9 @@
             <li><a href="#">Clean</a></li>
           </ul>
         </div>
--->
+
         <!-- // TAGS WIDGET -->
-<!--       
+      
         <div class="widget widget-newsletter ">
           <h3 class="widget-title"><span>Newsletter</span></h3>
           <form role="search" method="get" id="newsletterform" class="newsletterform" action="/">
@@ -440,105 +565,19 @@
             <button>SUBMIT</button>
           </form>
         </div>
--->        
+        
         <!--  WIDGET -->
-<!--
+
         <div class="widget widget-latest-post">
           <h3 class="widget-title"><span>LATEST POSTS</span></h3>
           <div class="x-carousel2"> 
--->            
-            <!--Use BX carousel if more than 5 items--> 
-<!--            
-            <script>
-  
-  $(document).ready(function(){ 
+            
+            <div class="bx-wrapper">
 
-$('.x-carousel2 ul').bxSlider({
-        minSlides: 1, // item 5
-        maxSlides: 1, // item 4
-        slideWidth: 330,
-      infiniteLoop:true ,
-        auto: true,
-        nextText: '',
-        prevText: '',
-        pagerSelector:'1'
-});
+            </div> <!-- bx-wrapper -->
 
-});
-
-  </script>
-            <ul >
-              <li>
-                <div class="media"> <a href="#"> <img src="media/730x625/2.jpg" width="730" height="625" alt="img"/></a>
-                  <div class="media-desc">
-                    <h5 class="entry-title"> PRAESENT DIAM LIBERO INTERDUM 
-                      AT FRINGILLA IDINTERDUM</h5>
-                    <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"> <i class="fa fa-clock-o"></i> 11 March , 2013</a> </time>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="media"> <a href="#"> <img src="media/730x625/3.jpg" width="730" height="625" alt="img"/></a>
-                  <div class="media-desc">
-                    <h5 class="entry-title"> PRAESENT DIAM LIBERO INTERDUM 
-                      AT FRINGILLA IDINTERDUM</h5>
-                    <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"> <i class="fa fa-clock-o"></i> 11 March , 2013</a> </time>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="media"> <a href="#"><img src="media/730x625/4.jpg" width="730" height="625" alt="img"/></a>
-                  <div class="media-desc">
-                    <h5 class="entry-title"> PRAESENT DIAM LIBERO INTERDUM 
-                      AT FRINGILLA IDINTERDUM</h5>
-                    <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"> <i class="fa fa-clock-o"></i> 11 March , 2013</a> </time>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
-          <ul class="entry-list unstyled">
-            <li>
-              <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/3.jpg" width="269" height="345" alt="img"/></a> </div>
-              <div class="entry-main">
-                <div class="entry-header">
-                  <h5 class="entry-title"><a href="#"> Aliquam interdum  eget sagittis eget eros.</a></h5>
-                </div>
-                <div class="entry-meta">
-                  <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 7 March , 2020</a> </time>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-            </li>
-            <li>
-              <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/1.jpg" width="269" height="345" alt="img"/></a> </div>
-              <div class="entry-main">
-                <div class="entry-header">
-                  <h5 class="entry-title"><a href="#">Phasellus vehicula auctor nisi.</a></h5>
-                </div>
-                <div class="entry-meta">
-                  <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 27 March , 2020</a> </time>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-            </li>
-            <li>
-              <div class="entry-thumbnail"> <a class="img" href="#"> <img src="media/270x337/2.jpg" width="269" height="345" alt="img"/></a> </div>
-              <div class="entry-header">
-                <h5 class="entry-title"><a href="#">Cras temnpus dolor Donec eget ligula</a></h5>
-              </div>
-              <div class="entry-main">
-                <div class="entry-meta">
-                  <time title="2020-10-27" datetime="2020-10-27" class="entry-datetime"> <a href="#"><span class="icon-clock" aria-hidden="true"></span> 12 March , 2020</a> </time>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-            </li>
-          </ul>
         </div>
--->
-        <!-- //  WIDGET --> 
-        
       </aside>
     </div>
   </div>
@@ -621,62 +660,62 @@ $('.x-carousel2 ul').bxSlider({
         <!--<div class="col-lg-4 col-sm-4 col-xs-12"> -->
             <div class="col-lg-4 footer-block wow slideInRight">
                 <h3 class="fot-title"> PHOTOS FROM magnific</h3>
-                <div class="popup-gallery footer-images">
-                    <a href="images/isotope1.jpg" class="footer-images-item">
+                <div class="popup-gallery magnific-images">
+                    <a href="images/isotope1.jpg" class="magnific-images-item">
                         <img src="images/isotope1.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope2.jpg" class="footer-images-item">
+                    <a href="images/isotope2.jpg" class="magnific-images-item">
                         <img src="images/isotope2.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope3.jpg" class="footer-images-item">
+                    <a href="images/isotope3.jpg" class="magnific-images-item">
                         <img src="images/isotope3.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope4.jpg" class="footer-images-item">
+                    <a href="images/isotope4.jpg" class="magnific-images-item">
                         <img src="images/isotope4.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope5.jpg" class="footer-images-item">
+                    <a href="images/isotope5.jpg" class="magnific-images-item">
                         <img src="images/isotope5.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope1.jpg" class="footer-images-item">
+                    <a href="images/isotope1.jpg" class="magnific-images-item">
                         <img src="images/isotope1.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope2.jpg" class="footer-images-item">
+                    <a href="images/isotope2.jpg" class="magnific-images-item">
                         <img src="images/isotope2.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope3.jpg" class="footer-images-item">
+                    <a href="images/isotope3.jpg" class="magnific-images-item">
                         <img src="images/isotope3.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                    <a href="images/isotope4.jpg" class="footer-images-item">
+                    <a href="images/isotope4.jpg" class="magnific-images-item">
                         <img src="images/isotope4.jpg">
-                        <span class="footer-search">
+                        <span class="magnific-search">
                             <i class="fas fa-search"></i>
                         </span>
                     </a>
-                </div> <!-- popup-gallery footer-images -->
+                </div> <!-- popup-gallery magnific-images -->
                     
                 </div>
             </div>

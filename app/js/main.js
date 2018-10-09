@@ -108,6 +108,46 @@ window.onload = function() {
         }
 
     );
+    /*
+    $('.xcarousel-2 .x-frame').sly(
+
+        {
+            horizontal: 1,
+            itemNav: 'basic',
+            smart: 1,
+            activateOn: 'click',
+            mouseDragging: 1,
+            touchDragging: 1,
+            releaseSwing: 1,
+
+            activatePageOn: 'click',
+            speed: 300,
+            elasticBounds: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            dynamicHandle: 1,
+            clickBar: 1,
+
+            // Buttons
+            prevPage: '.xcarousel-2 .prev-page',
+            nextPage: '.xcarousel-2 .next-page'
+        }
+
+    ); */
+    $(document).ready(function(){ 
+
+        $('.x-carousel2 ul').bxSlider({
+                minSlides: 1, // item 5
+                maxSlides: 1, // item 4
+                slideWidth: 330,
+              infiniteLoop:true ,
+                auto: true,
+                nextText: '',
+                prevText: '',
+                pagerSelector:'1'
+        });
+        
+        });
 
     ////////////////////////////////////////////  
     // ISOTOPE FILTER
