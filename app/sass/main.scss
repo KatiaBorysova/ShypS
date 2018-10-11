@@ -29,6 +29,7 @@
 @import 'sections/page-header';
 @import 'sections/blog-posts';
 @import 'sections/blog-pagination';
+@import 'sections/post-single';
 
 @import 'sections/sidebar';
 
@@ -36,7 +37,7 @@
 body {
   font-family: 'Lato', sans-serif;
   position: relative;
-  overflow-x: hidden;
+  //overflow-x: hidden;
   background-color: white;
 }
 
@@ -54,6 +55,9 @@ body {
 .text-center {
 	text-align: center
 } 
+.wow { 
+  visibility: hidden;
+}
 #map {
   width: 100%;
   height: 450px;
@@ -113,4 +117,3 @@ body {
         box-shadow: none;
     }
 }
-

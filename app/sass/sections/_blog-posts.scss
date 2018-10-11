@@ -108,7 +108,7 @@
 			transition: all 1s;
 			visibility: hidden;
 			width: 100%;
-			z-index: 4;
+			z-index: 1;
 			.link-view-more {
 				position: absolute;
 				width: 100%;
@@ -243,12 +243,9 @@
 } // .post
 
 
-/*
-.carousel-post {
-	margin: 0;
-	padding: 0;
-}
-*/
+  .fotorama__arr {
+	
+  }
 
 
 

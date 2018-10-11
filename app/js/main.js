@@ -60,16 +60,22 @@ $(document).ready(function() {
   $("html,body").animate({scrollTop: 0}, 100); //100ms for example
 });
 */
-
+/*
 window.onload = function() {
     setTimeout (function () {
      scrollTo(0,0);
     }, 100); 
-};
+}; 
+*/
 
-    ////////////////////////////////////////////  
-    // HOVER TABS
-    ///////////////////////////////////////////  
+//////////////////////////////////////////////////////////////////
+/////////////////////WOW///////////////////////////////////
+
+    new WOW().init();
+
+////////////////////////////////////////////  
+// HOVER TABS
+///////////////////////////////////////////  
 
 
     $('.about-tabs a').hover(function(e) {
@@ -108,47 +114,49 @@ window.onload = function() {
         }
 
     );
+    
+    ////////////////////////////////////////////////////////////////////////////////////
+    //  BOX SLIDER IN SIDEBAR
+    ////////////////////////////////////////////////////////////////////////////////////
     /*
-    $('.xcarousel-2 .x-frame').sly(
-
-        {
-            horizontal: 1,
-            itemNav: 'basic',
-            smart: 1,
-            activateOn: 'click',
-            mouseDragging: 1,
-            touchDragging: 1,
-            releaseSwing: 1,
-
-            activatePageOn: 'click',
-            speed: 300,
-            elasticBounds: 1,
-            easing: 'easeOutExpo',
-            dragHandle: 1,
-            dynamicHandle: 1,
-            clickBar: 1,
-
-            // Buttons
-            prevPage: '.xcarousel-2 .prev-page',
-            nextPage: '.xcarousel-2 .next-page'
-        }
-
-    ); */
     $(document).ready(function(){ 
 
         $('.x-carousel2 ul').bxSlider({
-                minSlides: 1, // item 5
+               minSlides: 1, // item 5
                 maxSlides: 1, // item 4
-                slideWidth: 330,
+               slideWidth: 330,
               infiniteLoop:true ,
-                auto: true,
+               auto: true,
                 nextText: '',
                 prevText: '',
                 pagerSelector:'1'
         });
-        
-        });
+       
+      });
+*/
 
+    ////////////////////////////////////////
+    // POST BOX SLIDER
+    /////////////////////////////////////
+
+/*
+    $('.carousel-post').bxSlider({
+        minSlides: 1, // item 5
+        maxSlides: 1, // item 4
+        slideWidth: 870,
+        infiniteLoop: true,
+        auto: true,
+        nextText: '',
+        prevText: '',
+        pagerSelector: '1'
+    });
+
+
+*/
+
+$(function () {
+    $('.fotorama').fotorama();
+  });
     ////////////////////////////////////////////  
     // ISOTOPE FILTER
     ///////////////////////////////////////////	 
@@ -227,22 +235,29 @@ window.onload = function() {
                 navigateByImgClick: true,
                 preload: [0,1] // Will preload 0 - before current, and 1 after the current image
             }
-            /*
+        });
+    });
+    $(document).ready(function() {
+        $('.popup-gallery1').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            fixedContentPos: false,
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+          
             image: {
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
                 titleSrc: function(item) {
-                    return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                    return item.el.attr('title') + '<small>by Shypshyna</small>';
                 }
-            } */
+            } 
         });
     });
-
-
-//////////////////////////////////////////////////////////////////
-/////////////////////WOW///////////////////////////////////
-
-    new WOW().init();
-
 
 
 ///////////////////////////////////////////////////////////////////////////////
