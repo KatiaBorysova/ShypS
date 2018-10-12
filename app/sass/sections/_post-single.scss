@@ -79,8 +79,9 @@ blockquote {
         }
     }
 } //.footer-panel
-
-
+.about-author {
+    margin-top: 10px;
+}
 .comments-header {
     font-family: 'Oswald', sans-serif;
 	background: none repeat scroll 0 0 #000000;
@@ -106,8 +107,15 @@ blockquote {
         color: #fff;
     }
 }
-
-
+.section-comment {
+    margin-bottom: 40px;
+}
+.comments-list {
+    
+    .children {
+        margin: 0 0 0 55px;
+    }
+}
 .comment {
 	transition: all .3s ease-out;
 	border: 1px solid #ddd;
@@ -115,6 +123,9 @@ blockquote {
 	padding-bottom: 20px;
 	position: relative;
     overflow: hidden;
+    &:hover {
+        background-color: #f4f4f4;
+    }
 
     .avatar-placeholder {
         background-color: #e1e1e1;
@@ -197,8 +208,6 @@ blockquote {
 
 } // .comment
 
-
-
 #comment-reply-form {
     margin-top: 30px;
     input {
@@ -241,17 +250,7 @@ blockquote {
     }
 }
 
-.section-comment {
-    margin-bottom: 40px;
-}
-.about-author {
-    margin-top: 10px;
-}
-.comments-list .children {
-	list-style: none outside none;
-	margin: 0 0 0 55px;
-	padding: 0;
-}
+
 
 
 

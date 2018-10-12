@@ -25,6 +25,7 @@
 @import 'sections/contact-us';
 @import 'sections/subscribe';
 @import 'sections/footer';
+@import 'sections/footer2';
 
 @import 'sections/page-header';
 @import 'sections/blog-posts';
@@ -106,14 +107,19 @@ body {
   &:before {
       content: '';
       border: 4px solid transparent;
-      border-top-color: #fff!important;
-      border-right-color: #fff!important;
+      border-top-color: #fff;
+      border-right-color: #fff;
       right: 3px;
       position: absolute;
      top: 3px;
   }
-
     &:focus {
         box-shadow: none;
+    }
+    &:hover {
+      &::before {
+        border-top-color: $secondColor;
+        border-right-color: $secondColor;
+      }
     }
 }

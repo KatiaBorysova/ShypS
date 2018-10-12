@@ -1,60 +1,23 @@
-
-
-
 $(function() {
     console.log('is main.js');
 });
 
-    ////////////////////////////////////////////  
-    // PARALAX SECTION
-    ///////////////////////////////////////////  
+////////////////////////////////////////////  
+// PARALAX SECTION
+///////////////////////////////////////////  
 
     $(window).scroll(function(e) {
         parallax();
     });
 
-
     function parallax() {
         var scrolled = $(window).scrollTop();
-        $('.animated-all .parallax-bg').css('top', -(scrolled * 0.9) + 'px' - 40);
+        $('.parallax-bg').css('top', -(scrolled * 0.9) + 'px' - 40);
     }
-
-
-
-/*
-  var x = 0;
-	        var y = 0;
-			//cache a reference to the banner
-	        var banner = $(".parallax-bg");
-
-			// set initial banner background position
-	        banner.css('backgroundPosition', x + 'px' + ' ' + y + 'px');
-
-	 		// scroll up background position every 90 milliseconds
-	        window.setInterval(function() {
-	        	banner.css("backgroundPosition", x + 'px' + ' ' + y + 'px');
-	            y--;
-	            //x--;
-
-	            //if you need to scroll image horizontally -
-	            // uncomment x and comment y
-
-	        }, 90);
-			
-*/		
+		
 ////////////////////////////////////////////  
-    // SCROLL TOP
-    ///////////////////////////////////////////
-/*
-    $('.scroll-top').click(function(event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: 0
-        }, 300);
-    });
-*/
-    ///////
+// SCROLL TOP
+///////////////////////////////////////////
 /*
 $(document).ready(function() {
   $("html,body").animate({scrollTop: 0}, 100); //100ms for example
@@ -68,9 +31,9 @@ window.onload = function() {
 }; 
 */
 
-//////////////////////////////////////////////////////////////////
-/////////////////////WOW///////////////////////////////////
-
+///////////////////////////////////
+// WOW
+///////////////////////////////////
     new WOW().init();
 
 ////////////////////////////////////////////  
@@ -84,10 +47,9 @@ window.onload = function() {
     });
    
 
-    ////////////////////////////////////////////  
-    // SLY SCROLL
-    ///////////////////////////////////////////  
-
+////////////////////////////////////////////  
+// SLY SCROLL
+///////////////////////////////////////////  
 
     $('.xcarousel-1 .x-frame').sly(
 
@@ -115,53 +77,17 @@ window.onload = function() {
 
     );
     
-    ////////////////////////////////////////////////////////////////////////////////////
-    //  BOX SLIDER IN SIDEBAR
-    ////////////////////////////////////////////////////////////////////////////////////
-    /*
-    $(document).ready(function(){ 
-
-        $('.x-carousel2 ul').bxSlider({
-               minSlides: 1, // item 5
-                maxSlides: 1, // item 4
-               slideWidth: 330,
-              infiniteLoop:true ,
-               auto: true,
-                nextText: '',
-                prevText: '',
-                pagerSelector:'1'
-        });
-       
-      });
-*/
-
-    ////////////////////////////////////////
-    // POST BOX SLIDER
-    /////////////////////////////////////
-
-/*
-    $('.carousel-post').bxSlider({
-        minSlides: 1, // item 5
-        maxSlides: 1, // item 4
-        slideWidth: 870,
-        infiniteLoop: true,
-        auto: true,
-        nextText: '',
-        prevText: '',
-        pagerSelector: '1'
-    });
-
-
-*/
+/////////////////////////////////////////
+// FOTORAMA
+///////////////////////////////////////
 
 $(function () {
     $('.fotorama').fotorama();
   });
-    ////////////////////////////////////////////  
-    // ISOTOPE FILTER
-    ///////////////////////////////////////////	 
-	
-	
+
+////////////////////////////////////////////  
+// ISOTOPE FILTER
+///////////////////////////////////////////	 	
 
     $('.isotope-filter').isotope({
         itemSelector: '.isotope-item'
@@ -185,8 +111,6 @@ $(function () {
 
     });
 
-
-
     var options = {
         horizontal: 1,
         itemNav: 'basic',
@@ -206,8 +130,8 @@ $(function () {
     //$('.isotope-frame').sly(options);
 
 
-//////////////////////////
-// magnificPopup //
+////////////////////////////////////
+// magnificPopup 
 /////////////////////////////////////
 
     $('.image-popup-no-margins').magnificPopup({
@@ -218,8 +142,7 @@ $(function () {
 		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
 		image: {
 			verticalFit: true
-        },
-       
+        },  
 		
     });
     
@@ -260,10 +183,9 @@ $(function () {
     });
 
 
-///////////////////////////////////////////////////////////////////////////////
-///////////////////////// MENU HEADER /////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
+/////////////////////////////////////////////
+// MENU HEADER 
+////////////////////////////////////////////
 /*
 $(document).ready(function(){
 
@@ -280,12 +202,12 @@ $(document).ready(function(){
 
         });//scroll 
     });
-
 */
 
-/////////////////////////////////////////////////////////////
-///////////////// HAMBURGER /////////////////////////////////
-//////////////////////////////////////////////////////////////
+/////////////////////////////////////////////
+// HAMBURGER 
+/////////////////////////////////////////////
+
 var Hamburger = {
   
     el: {
@@ -318,8 +240,6 @@ var Hamburger = {
   };
   
   Hamburger.init();
-
-
 
 //////////////////////////////////////////////////////////
 

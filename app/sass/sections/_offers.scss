@@ -124,7 +124,9 @@
                 text-align: right;
                 width: 85%;
                 font-size: 13px;
-
+                @media only screen and (max-width : 1260px) {
+                    font-size: 11px;
+                }
                 @media only screen and (max-width : 1150px) {
                     display: none;
                 }
@@ -140,7 +142,7 @@
                 text-transform: uppercase;
                 text-decoration: none;
                
-                @media only screen and (max-width : 1160px) {
+                @media only screen and (max-width : 1260px) {
                     font-size: 13px;
                     padding: 10px;
                 }
