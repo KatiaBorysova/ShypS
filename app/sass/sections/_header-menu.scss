@@ -1,44 +1,41 @@
 .main-header {
     
     .main-menu {
-        background-color: $mainColor;
+      background-color: $mainColor;     
+    }  
         .navbar {
-            padding: 0;
-
-            @media only screen and (max-width: 991px){
+            padding: 0; 
+    
+            @media only screen and (max-width: 768px){
                 width: 100%;
             }
+            
+            .navbar-nav {
+                flex-direction: row;
+
+                @media only screen and (max-width: 768px){
+                    flex-direction: column;
+                }
+            }
+
             .nav-item {
                 position: relative;
                 .nav-link {
                     color: $white;
                     font-size: 14px;
                     font-weight: bold;
-                    padding: 15px 16px;
+                    padding: 14px 16px;
                     text-transform: uppercase;
 
-                    @media only screen and (max-width: 991px){
+                    @media only screen and (max-width: 768px){
                         width: 100%;
-                        padding: 9px 16px;
+                        padding: 6px 16px;
                     }
                 }
-                &:hover {
-                    .nav-link {
-                        box-shadow: 1px 0 10px 6px #cd1410 inset;
-                    }
-                }
-                &.active {
-                    &:after {
-                        bottom: -3px;
-                        content: "";
-                        position: absolute;
-                        height: 3px;
-                        width: 100%;
-                        z-index: 2;
-                        background-color: $thirdColor;
-                    }
-                    .nav-link {
-                        box-shadow: 1px 0 10px 6px #cd1410 inset;
+                    &:hover {
+                        .nav-link {
+                            box-shadow: 1px 0 10px 6px #cd1410 inset;
+                        }
                     }
                 }
                 .sub-menu {
@@ -74,33 +71,55 @@
                             text-transform: uppercase;
                         }
                     }
-                }
+                } // .sub-menu
             }
-        }
-    }
+        } // .navbar
+        
+/* fixed to top menu */
+
+.navbar-default {
+    border-color: transparent;
 }
+.navbar-fixed-top {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 10;
+} 
+
+
 /* for hamburger menu */
+.mobile-menu {
+    background-color: #000;
+}
 .navbar-row {
     width: 100%;
+    
+    @media only screen and (max-width: 590px){
+        padding: 0 0 0 5px;
+    }
 }
 .navbar-toggler {
-    &:focus {
-        outline: none;
-    }   
+    display: none;
+    padding: 0;
+    @media only screen and (max-width: 991px){
+       display: block;
+     } 
 }
 .hamburger {
     cursor: pointer;
-    margin: 5px auto 10px auto;
+    margin: 7px auto 5px 5px;
     padding-left: 1.25em;
     position: relative;
-    width: 40px;
+    width: 35px;
     height: 30px;
  
     .hamburger-global {
         backface-visibility: hidden;
         position: absolute;
         left: 0;
-        border-top: 4px solid white;
+        border-top: 2.5px solid white;
         width: 100%;
         transition: 0.55s;
     }
@@ -108,11 +127,12 @@
         top: 0;
     }
     .hamburger-middle {
-        top: 15px;
+        top: 11px;
     }
     .hamburger-bottom {
-        top: 30px;
+        top: 22px;
     }
+    /*
     .hamburger-top-click {
         backface-visibility: hidden;
         top: 15px;
@@ -128,18 +148,6 @@
         transform: rotate(-410deg);
         transition: 0.55s 0.5s;
     }
+    */
 }
 
-/* fixed to top menu */
-/*
-.navbar-default {
-    border-color: transparent;
-    //background-color: #222;
-}
-.navbar-fixed-top {
-        position:fixed;
-        top:0;
-        left:0;
-        width:100%;
-        z-index: 10;
-} */

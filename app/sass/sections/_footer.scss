@@ -1,92 +1,107 @@
 .footer {
-	color: #fff;
-	
-	.footer-block {
-		margin-bottom: 50px;
+    background-color: #000;
+    color: #ccc;
+    font-size: 14px;
 
-	.fot-title {
-		font-family: 'Oswald', sans-serif;
-		text-transform: uppercase;
-		font-size: 16px;
-		text-align: left;
-		color: #e21712;
-		margin-bottom: 20px;
+    .footer-element {
+        @media only screen and (max-width: 991px){
+            margin-bottom: 30px;
+        }
+    }
+    .footer-menu {
+        @media only screen and (max-width: 991px){
+            margin-bottom: 30px;
+        }
+    }
 
-		@media only screen and (max-width: 1000px) {
-			text-align: center;
-		}
-	}
+    .footer-tittle {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: left;
+        position: relative;
+        color: #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        &:after {
+            border: 1px solid #333333;
+            border-left: 0;
+            border-right: 0;
+            bottom: -10px;
+            content: "";
+            display: block;
+            height: 5px;
+            position: absolute;
+            width: 100%;
+        }
+    }
+   
+    .footer-logo-container {
+        width: 100px;
+        margin: 5px auto;    
+    }
+    .footer-nav {
+        text-align: left;
 
-/* first block */
-	.footer-schedule {
-		@media only screen and (max-width: 1000px) {
-			margin: 0 auto;
-		}
+        .footer-nav-item {
+            margin-bottom: 5px;
+            margin-left: 20px;
+            position: relative;
 
-	.footer-item-head {
-		font-size: 13px;
-		font-weight: normal;
-		border-bottom: 1px solid #333333;
-		padding: 10px 0;
-		text-align: left;
-		width: 120px;
-	}
-	.footer-item-inner {
-		font-size: 13px;
-		font-weight: normal;
-		border-bottom: 1px solid #333333;
-		padding: 10px 0;
-		text-align: right;
-	}
+            
+
+            &:before {
+                transition: all .3s ease-out;
+                content: '';
+                border: 5px solid #fff;
+                border-bottom-color: #000;
+                border-left-color: #000;
+                left: -20px;
+                position: absolute;
+                top: 5px;
+            }
+            a {
+                transition: all .3s ease-out;
+                color: #ccc;
+                text-decoration: none;
+                &:hover {
+                    background-color: #ffc908;
+                    color: #000;
+                }    
+            }
+        }
+    }
+    .icon-set-wrap {
+        
+        .icon-set {
+            margin-bottom: 10px;
+            float: left;
+
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                float: none;
+            }
+            i {
+                border: 2px solid $mainColor;
+                border-radius: 100px;
+                padding: 6px;
+                width: 50px;
+                line-height: 32px;
+                text-align: center;
+                height: 50px;
+                font-size: 16px;
+                margin-right: 15px;
+            }
+        }
+        .content-icon-set {
+            p {
+                font-size: 12px;
+            }
+            a {
+                color: #ccc;
+            }
+        }
+    }
+
+
+    
 }
-
-/* second block */
-	.logo-container-footer {
-		width: 250px;
-		margin: 0 auto 10px;
-	}
-	.social-links {
-		display: inline-block;
-		width: 100%;
-		text-align: center;
-	
-		.social-item {
-			display: inline-block;
-			margin: 10px 5px 0 0 !important;
-			width: 35px !important;
-	
-			a {
-				color: #888888;
-				display: inline-block;
-				font-size: 27px;
-				height: 33px;
-				line-height: 24px;
-				overflow: hidden;
-				padding: 5px;
-				position: relative;
-				vertical-align: top;
-				width: 33px;
-				transition: all .3s ease-out;
-	
-				&:hover {
-					text-decoration: none;
-					color: #e21712;
-					i {
-						text-decoration: none;
-						color: #e21712;
-					}
-				}
-	
-				i {
-					transition: all .3s ease-out
-				}
-			}
-		}
-	}
-} // .footer-block
-}
-
-
-
-
-

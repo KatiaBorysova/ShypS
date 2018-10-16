@@ -9,12 +9,13 @@
 			color: #fff;
 			height: 82px;
 			left: -20px;
-			padding: 10px 20px;
+			padding: 7px;
 			position: absolute;
 			top: 0;
 			width: 80px;
 			z-index: 78;
 			transition: all .3s ease-out;
+			text-transform: uppercase;
 			&:before {
 				transition: all .3s ease-out;
 				content: '';

@@ -37,23 +37,46 @@
 <body class="home-page index" id="page-top" data-pinterest-extension-installed="cr1.3.4">
    
 <header class="main-header">
-    <nav class="main-menu navbar" id="menu">
+        <section class="no-bg-color-parallax parallax-black ">
+            <ul class="bg-slideshow">
+                <li>
+                    <div class="bg-slide" style="background-image:url(images/parallax1.jpg)"></div>
+                </li>
+                <li>
+                    <div class="bg-slide" style="background-image:url(images/parallax2.jpg)"></div>
+                </li>
+            </ul>
+        <!--    <div class="parallax-bg" style="background-image:url(images/paparallax4.jpg) ;"></div>-->
+            <div class="container">
+                <div class="row">   
+                    <div class="logo-container logo-container-pages">
+                        <img src="./images/_logo%20RunClub.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </section> 
+    
+<!-- MENU  -->  
+<section class="navbar-default" id="menu">
+
+<div class="mobile-menu">
         <div class="container">
-            <div class="row navbar-row">
+            <div class="navbar-toggler" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                        <span class="hamburger-global hamburger-top"></span>
+                        <span class="hamburger-global hamburger-middle"></span>
+                        <span class="hamburger-global hamburger-bottom"></span>
+                </div>
+            </div> <!-- navbar-toggler -->
+        </div>
+    </div>
+    <nav class="main-menu navbar">  
+        <div class="container">
+            <div class="row navbar-row">          
                 <nav class="navbar navbar-expand-lg">
             <!--        <a class="navbar-brand" href="#"></a>-->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="hamburger">
-                                    <span class="hamburger-global hamburger-top"></span>
-                                    <span class="hamburger-global hamburger-middle"></span>
-                                    <span class="hamburger-global hamburger-bottom"></span>
-                                  </div>
-                     <!--       <img src="images/menu.png">
-                        <span class="navbar-toggler-icon"></span>-->
-                    </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
@@ -84,7 +107,7 @@
             </div>
         </div>
     </nav>
- 
+</section>
 </header>
 <main>
 <!-- SECTION CONTACT US -->
@@ -104,7 +127,7 @@
                         <div class="logo-container logo-container-subscribe">
                             <img src="./images/_logo RunClub2.png" alt="">
                         </div>
-                    <h2 class="section-heading section-heading-contact"> CONTACT US</h2>
+                    <h2 class="section-heading section-heading-contact"> ЗВ'ЯЖІТЬСЯ З НАМИ</h2>
                     <h3 class="section-subheading">WE’RE ALL ABOUT XTREME SPORTS</h3>
                     <p>Lacus sit amet aliquet cons equate metus eros volutpat leo id ms auctor elit lorem eu orci. 
                         Suspendisse ante. Cras pedey Mauris lectus quam facilisis ad condimentum sit amet condm 
@@ -134,7 +157,7 @@
                     <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
                     <div id="success"></div>
-                    <button type="submit" class="btn btn-xl btn-large">Send Message</button>
+                    <button type="submit" class="btn btn-xl btn-large">Надіслати</button>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -177,13 +200,13 @@
         <div class="col-lg-12">
           <div class="cd-form-wrapper cd-container">
             <div class="heading-wrap wow bounceInUp">
-                <h2 class="section-heading section-heading-subscribe">SUBSCRIBE TO <strong>CLUB NEWSLETTER</strong></h2>
+                <h2 class="section-heading section-heading-subscribe">Підпишись на <strong>новини клубу</strong></h2>
                 <p>Lacus sit amet aliquet cons equate metus eros volutpat leo id ms auctor elit lorem eu orci. 
                   Suspendisse ante cras pedey</p>
             </div>
             <form class="cd-form">
               <input type="email" id="cd-email" class="cd-email" name="cd-email" required placeholder="Enter your email address">
-              <button type="submit" class="btn cd-submit btn-large" value="Submit">Submit</button>
+              <button type="submit" class="btn cd-submit btn-large" value="Submit">Підписатись</button>
             <!--<div class="cd-loading"></div>-->
             </form>
           </div> <!-- cd-form-wrapper cd-container-->
@@ -192,7 +215,7 @@
     </section>
 </main>
 
-<footer class="footer2">
+<footer class="footer">
     <section class="home-section text-center">
         <!--
         <ul class="bg-slideshow">
@@ -225,7 +248,7 @@
             <div class="col-md-3">
                 <div class="footer-element">
                     <div class="footer-menu">
-                        <h2 class="footer-tittle">Informtion</h2>
+                        <h2 class="footer-tittle">Інформація</h2>
                         <ul class="footer-nav">
                             <li class="footer-nav-item">
                                 <a href="#" class="footer-nav-link">Home</a>
@@ -249,7 +272,7 @@
             <div class="col-md-3">
                 <div class="footer-element">
                     <div class="footer-menu">
-                        <h2 class="footer-tittle">Categories</h2>
+                        <h2 class="footer-tittle">Категорії</h2>
                         <ul class="footer-nav footer-nav-category">
                             <li class="footer-nav-item">
                                 <a href="#" class="footer-nav-link">My account</a>
@@ -270,7 +293,7 @@
             <div class="col-md-3">
                 <div class="footer-element">
                     <div class="footer-menu">
-                        <h2 class="footer-tittle">Contact us</h2>
+                        <h2 class="footer-tittle">Зв'язатись з нами</h2>
                         <div class="icon-set-wrap">
                             <div class="icon-set">
                                 <a><i class="fa fa-map-marker"></i></a>

@@ -45,6 +45,7 @@
 			padding: 20px;
 			position: relative;
 			margin-bottom: 30px;
+			
 			&:after {
 				background: none repeat scroll 0 0 #e21712;
 				content: "";
@@ -74,4 +75,11 @@
 			color: #000;
 		}
 	} // .service-item		
+}
+.services-wrapper-page {
+	background-color: #fff;
+	.service-icon {
+		background-color: $lightBgColor !important;
+	}
+
 }
