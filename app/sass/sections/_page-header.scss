@@ -26,7 +26,10 @@
 		padding: 0;
 		text-transform: uppercase;
 		background-color: $white;
-	
+
+		@media only screen and (max-width: 460px) {
+			font-size: 14px;
+		}	
 		li {
 			padding: 0 5px;
 	

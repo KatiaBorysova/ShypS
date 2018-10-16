@@ -7,15 +7,23 @@
 		.box-date-post {
 			background: none repeat scroll 0 0 $mainColor;
 			color: #fff;
-			height: 82px;
-			left: -20px;
 			padding: 7px;
 			position: absolute;
+			left: -20px;
 			top: 0;
+			height: 82px;
 			width: 80px;
 			z-index: 78;
 			transition: all .3s ease-out;
 			text-transform: uppercase;
+			@media only screen and (max-width: 576px) {
+				top: -12px;
+				left: -10px;
+				height: 57px;
+				width: 60px;
+				padding: 0 0 5px 5px;
+			}
+			
 			&:before {
 				transition: all .3s ease-out;
 				content: '';
@@ -26,6 +34,9 @@
 				right: -11px;
 				top: 30px;
 				transform: rotate(45deg);
+				@media only screen and (max-width: 576px) {
+					top: 18px;
+				}
 			}
 			&:after {
 				transition: all .3s ease-out;
@@ -43,9 +54,16 @@
 				font-weight: bold;
 				font-size: 26px;
 				line-height: 38px;
+				@media only screen and (max-width: 576px) {
+					font-size: 20px; 
+					line-height: 30px;
+				}
 			}
 			.date-2 {
 				font-size: 14px;
+				@media only screen and (max-width: 576px) {
+					font-size: 10px; 
+				  }
 			}	
 		} // .box-date-post 
 
@@ -79,11 +97,11 @@
 			}
 			.post-type-media {
 				background: none repeat scroll 0 0 #fff;
-				bottom: -58px;
 				color: #000;
 				display: block;
 				font-size: 31px;
 				height: 150px;
+				bottom: -58px;
 				left: -36px;
 				line-height: 1;
 				padding: 48px 10px 0 30px;
@@ -92,9 +110,13 @@
 				transform: rotate(-45deg);
 				width: 100px;
 				z-index: 777;
+				@media only screen and (max-width: 576px) {
+					height: 100px;
+					bottom: -68px;
+					left: -56px;
+				  }
 				i {
 					display: block;
-					//font-weight: lighter;
 					transform: rotate(45deg);
 				}
 			}
@@ -160,6 +182,9 @@
 			font-style: italic;
 			font-size: 17px;
 			display: inline-block;
+			@media only screen and (max-width: 576px) {
+				padding: 20px 20px 20px 70px;
+			}
 			a {
 				color: #fff;
 				text-decoration: none;
@@ -172,6 +197,7 @@
 				font-size: 20px;
 				text-transform: uppercase;
 				position: relative;
+				margin-top: 10px;
 			
 				&:after {
 					content: '';
