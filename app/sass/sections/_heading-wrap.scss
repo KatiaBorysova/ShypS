@@ -33,13 +33,13 @@
       transition-timing-function: linear;
       //transition: background-color .5s linear;
         &:hover {
-            margin-left: 30px;
+            //margin-left: 30px;
             background-color: $mainColor;
         } 	
 
         @media only screen and (max-width: 450px) {
-          font-size: 12px;
-          padding: 5px;
+          font-size: 11px;
+          padding: 4px;
         }
 
     } //.section-subheading

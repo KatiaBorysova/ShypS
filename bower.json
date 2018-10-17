@@ -10,6 +10,8 @@
     "isotope-layout": "isotope#^3.0.6",
     "magnific-popup": "^1.1.0",
     "wow": "wowjs#^1.1.2",
-    "fotorama": "^4.6.4"
+    "fotorama": "^4.6.4",
+    "Font-Awesome": "^5.4.1",
+    "owl.carousel": "owl-carousel2#^2.3.4"
   }
 }

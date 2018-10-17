@@ -1,8 +1,13 @@
-
+/*
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss'; 
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+*/
+@import '../bower_components/Font-Awesome/web-fonts-with-css/scss/fontawesome.scss';
+@import '../bower_components/Font-Awesome/web-fonts-with-css/scss/regular.scss';
+@import '../bower_components/Font-Awesome/web-fonts-with-css/scss/solid.scss';
+@import '../bower_components/Font-Awesome/web-fonts-with-css/scss/brands.scss'; 
 
 @import 'includes/settings';
 @import 'includes/global';
@@ -64,7 +69,8 @@ body {
 }
 .container {
   @media only screen and (max-width: 576px) {
-    margin-left: 7px; 
+    margin-left: 2px; 
+    margin-right: 2px
   }
 }
 
@@ -127,3 +133,5 @@ body {
       }
     }
 }
+
+

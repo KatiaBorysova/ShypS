@@ -6,16 +6,20 @@
         margin: 70px auto;
     }
 
-    .x-slider {
+    #owl-demo {
 
-        .x-slider-point {
-            list-style: none outside none;
+        .owl-item {
+            //width: 200px !important;
+          }
+
+        .item-owl-wrap {
             position: relative;
             width: 200px;
-            display: inline-block;
-            float: left;
+            padding: 0;
+            margin: 0;
             position: relative;
             vertical-align: top;
+            text-align: center;
 
             .avatar {
                 transform: rotateY(0deg) rotateY(0deg);
@@ -37,12 +41,9 @@
                 .avatar-header{
                     padding: 0 10px;
                 } 
-         } // .avatar
-
-         
-
+         } // .avatar    
             
-        } //.x-slider-point 
+    } //.item-owl-wrap 
             
         .details {
             background-color: #e21712;
@@ -98,7 +99,7 @@
             }
         } // .details
 
-        .x-item-wrap {
+        .item-owl-wrap{
             &:hover {
                 .details {
                     z-index: 10;
@@ -108,61 +109,7 @@
                     transition: all .35s ease;
                 }
             }   
-        } // .x-item-wrap   
-    } // .x-slider
+        } // item-owl-wrap   
+    } // #owl-demo
 
-    .x-navigation {
-        margin: 20px auto 0;
-        position: relative;
-        text-align: center;
-
-        @media only screen and (max-width: 675px) {
-            text-align: left;
-        }
-
-        &:after {
-            border: 2px solid #dddddd;
-            border-left: 0;
-            border-right: 0;
-            content: "";
-            display: inline-block;
-            left: 0;
-            padding: 1px;
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            z-index: 3;
-        }
-
-        .slider-direction {
-            background: #fff;
-            border: 1px solid #ddd;
-            height: 40px;
-            width: 40px;
-            padding: 8px 0;
-            text-align: center;
-            top: 0;
-            position: relative;
-            z-index: 7;
-            display: inline-block;
-            
-            &:hover {
-                background: #000;
-                border: 1px solid #000;
-                i {
-                    color: #fff;
-                }
-            }
-            &.disabled {
-                opacity: 0.5;
-            }
-            i {
-                color: #000;
-            }
-        } // .slider-direction
-
-    } // .x-navigation 
-    .x-frame {
-        width: 1170px;
-    }
 } // .acievements-wrapper

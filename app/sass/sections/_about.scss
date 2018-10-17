@@ -36,6 +36,9 @@
         padding: 0 0 40px 40px;
         position: relative;
         margin-bottom: 40px;
+        @media only screen and (max-width: 576px) {
+            padding: 0 0 10px 40px;
+          }
 
         &:before {
             border-top: 1px solid #000;
@@ -58,6 +61,8 @@
         }
     } //.blockquote-quote
     .avatar-about {
+        margin-bottom: 35px;
+
             img {
             float: left;
             height: auto;
@@ -97,6 +102,9 @@
                 margin-right: 10px;
                 width: 30%;
                 position: inherit;
+                &:last-child {
+                    margin-right: 0;
+                }
                 a {
                     border: medium none !important;
                     margin: 0;
@@ -120,7 +128,7 @@
                     }
                 }
                 .tab-li-content {
-                    bottom: 0;
+                    //bottom: 0;
                     left: 0;
                     min-height: 190px;
                     position: absolute;

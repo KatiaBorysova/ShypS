@@ -48,34 +48,27 @@ window.onload = function() {
    
 
 ////////////////////////////////////////////  
-// SLY SCROLL
+// OWL CAROUSEL
 ///////////////////////////////////////////  
 
-    $('.xcarousel-1 .x-frame').sly(
+      $(document).ready(function() {
+     
+        $("#owl-demo").owlCarousel({
 
-        {
-            horizontal: 1,
-            itemNav: 'basic',
-            smart: 1,
-            activateOn: 'click',
-            mouseDragging: 1,
-            touchDragging: 1,
-            releaseSwing: 1,
+            loop:true,
+           autoWidth:true
 
-            activatePageOn: 'click',
-            speed: 300,
-            elasticBounds: 1,
-            easing: 'easeOutExpo',
-            dragHandle: 1,
-            dynamicHandle: 1,
-            clickBar: 1,
-
-            // Buttons
-            prevPage: '.xcarousel-1 .prev-page',
-            nextPage: '.xcarousel-1 .next-page'
-        }
-
-    );
+            //items : 1, // THIS IS IMPORTANT
+            //responsive : {
+                  //330 : { items : 1  }, // from zero to 330 screen width 4 items
+                  //768 : { items : 2  }, // from 480 screen widthto 768 6 items
+                  //1024 : { items : 3   // from 768 screen width to 1024 8 items
+                  //}
+             // }
+       
+        });
+ 
+      });   
     
 /////////////////////////////////////////
 // FOTORAMA
