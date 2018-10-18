@@ -52,6 +52,8 @@
         float: left;
         margin-bottom: 5px;
         width: 100%;
+
+
         
         .icon-set {
             border: 2px solid #e21712;
@@ -61,6 +63,10 @@
             width: 50px;
             height: 50px;
             font-size: 20px;
+
+            @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                float: none;
+            }
         }
         .content-icon-set {
             float: left;
@@ -69,6 +75,10 @@
             text-align: left;
             font-size: 14px;
             line-height: 20px;
+            @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                padding: 8px 0 15px 0;
+                font-size: 12px;
+            }
     
             a {
                 color: #fff;

@@ -54,7 +54,12 @@ gulp.task('fonts', function () {
     return gulp.src('app/fonts/*')
         .pipe(gulp.dest('dist/fonts/'));
 });
-
+/*
+gulp.task('icons', function() {
+    return gulp.src('app/bower_components-/Font-Awesome/webfonts/**.*')
+        .pipe(gulp.dest('dist/fonts/'));
+});
+*/
 //Images Build
 gulp.task('images', function () {
     return gulp.src('app/images/*')
@@ -78,8 +83,10 @@ gulp.task('clean', function () {
         .pipe(clean());
 });
 
+
+
 //Build
-gulp.task('build', ['clean', 'fonts', 'img'], function () {
+gulp.task('build', ['clean', 'fonts', 'images'], function () {
     return gulp.src('app/*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))

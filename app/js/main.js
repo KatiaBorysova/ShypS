@@ -51,13 +51,15 @@ window.onload = function() {
 // OWL CAROUSEL
 ///////////////////////////////////////////  
 
-      $(document).ready(function() {
-     
+$(document).ready(function() {
+
+     var owlDemo = document.querySelector('#owl-demo');
+     if (owlDemo) {
+
         $("#owl-demo").owlCarousel({
 
             loop:true,
-           autoWidth:true
-
+            autoWidth:true
             //items : 1, // THIS IS IMPORTANT
             //responsive : {
                   //330 : { items : 1  }, // from zero to 330 screen width 4 items
@@ -65,10 +67,9 @@ window.onload = function() {
                   //1024 : { items : 3   // from 768 screen width to 1024 8 items
                   //}
              // }
-       
         });
- 
-      });   
+     };   
+});   
     
 /////////////////////////////////////////
 // FOTORAMA
